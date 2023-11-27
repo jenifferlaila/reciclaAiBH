@@ -1,8 +1,14 @@
-import React from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { Home, NotFound } from './pages';
 
 function App() {
   return (
-    <h1>Recicla Ai</h1>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/*" element={<NotFound />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
