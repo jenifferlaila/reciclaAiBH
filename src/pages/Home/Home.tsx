@@ -1,5 +1,9 @@
+import { useContent } from '../../content';
+
 function Home() {
-  return <h2>Home</h2>;
+  const { t } = useContent();
+
+  return <h2>{t('home.title')}</h2>;
 }
 
 export default Home;
