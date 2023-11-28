@@ -1,4 +1,5 @@
-import { Navbar } from '../../components';
+import { Typography } from '@mui/material';
+import { Navbar, PageWrapper } from '../../components';
 import { useContent } from '../../content';
 
 function Home() {
@@ -7,7 +8,11 @@ function Home() {
   return (
     <>
       <Navbar />
-      <h2>{t('home.title')}</h2>
+      <PageWrapper>
+        <Typography variant="h2" component="h2">
+          {t('home.title')}
+        </Typography>
+      </PageWrapper>
     </>
   );
 }
