@@ -1,17 +1,12 @@
-import { Typography } from '@mui/material';
 import { Navbar, PageWrapper } from '../../components';
-import { useContent } from '../../content';
+import { TitleCard } from './components';
 
 function Home() {
-  const { t } = useContent();
-
   return (
     <>
-      <Navbar />
+      <Navbar isHome />
       <PageWrapper>
-        <Typography variant="h2" component="h2">
-          {t('home.title')}
-        </Typography>
+        <TitleCard />
       </PageWrapper>
     </>
   );
