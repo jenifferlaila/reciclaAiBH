@@ -6,11 +6,18 @@ const theme = createTheme({
     primary: {
       main: '#ffffff',
       contrastText: '#000000',
-      light: '#ffffff',
+      light: '#f5f5f5',
+      dark: '#dcdcdc',
     },
     secondary: {
       main: '#259c00',
+      light: 'rgb(80, 175, 51)',
+      dark: 'rgb(25, 109, 0)',
+      contrastText: '#000',
     },
+  },
+  typography: {
+    fontFamily: 'Poppins',
   },
 });
 
