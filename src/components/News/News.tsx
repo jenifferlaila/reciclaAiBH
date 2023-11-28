@@ -9,7 +9,7 @@ export interface NewsProps {
 
 function News({ news }: NewsProps) {
   return (
-    <Carousel sx={{ width: '100%' }} navButtonsAlwaysVisible>
+    <Carousel sx={{ width: '100%', height: 'auto' }} navButtonsAlwaysVisible swipe cycleNavigation>
       {news.map((news, index) => (
         <NewsCard key={`news-${index}`} {...news} />
       ))}
