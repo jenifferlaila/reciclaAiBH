@@ -6,6 +6,11 @@
   box-sizing: border-box;
 }
 
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
 menu:not(article menu),
 ol:not(article ol),
 ul:not(article ul) {
