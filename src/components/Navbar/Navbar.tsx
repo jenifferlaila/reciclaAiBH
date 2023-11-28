@@ -1,4 +1,4 @@
-import { AppBar, Container, Toolbar, IconButton, useTheme, Typography } from '@mui/material';
+import { AppBar, Container, Toolbar, useTheme, Typography } from '@mui/material';
 import { ArrowBackIosNew } from '@mui/icons-material';
 import { useContent } from '../../content';
 import { Link } from 'react-router-dom';
@@ -16,11 +16,9 @@ function Navbar({ isHome = false }: NavbarProps) {
     <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          {!isHome && (
-            <IconButton aria-label="back" href="/" sx={{ color: palette.text.primary }} LinkComponent={Link}>
-              <ArrowBackIosNew />
-            </IconButton>
-          )}
+          <Link to="/" style={{ color: palette.text.primary, visibility: isHome ? 'hidden' : 'visible' }}>
+            <ArrowBackIosNew />
+          </Link>
 
           <Typography variant="h5" component="p" sx={{ fontWeight: 'normal', ml: 'auto', pr: '1rem' }}>
             {t('navbar.title')}

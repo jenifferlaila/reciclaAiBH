@@ -1,4 +1,6 @@
 import { useMediaQuery, useTheme } from '@mui/material';
+import { Link } from 'react-router-dom';
+
 import { useContent } from '../../../../content';
 import { ActionArea, ImageContainer, Title, Wrapper } from './TitleCard.style';
 import { Button } from '../../../../components';
@@ -15,17 +17,21 @@ function TitleCard() {
         <img src="/recycle.svg" alt="Recicle" style={{ maxWidth: 550, minWidth: 300 }} />
       </ImageContainer>
 
-      <Title variant={isLarge ? 'h2' : 'h4'} sx={{ justifyContent: isLarge ? undefined : 'space-evenly' }}>
+      <Title variant={isLarge ? 'h3' : 'h4'} sx={{ justifyContent: isLarge ? undefined : 'space-evenly' }}>
         {t('home.title')}
       </Title>
 
       <ActionArea>
-        <Button href="/" variant="contained" sx={{ boxShadow: 8, width: '100%' }}>
-          {t('home.more')}
-        </Button>
-        <Button href="/" variant="contained" sx={{ boxShadow: 8 }}>
-          {t('home.locations')}
-        </Button>
+        <Link to="/mais" style={{ width: '100%' }}>
+          <Button variant="contained" sx={{ boxShadow: 8, width: '100%' }}>
+            {t('home.more')}
+          </Button>
+        </Link>
+        <Link to="/coleta">
+          <Button variant="contained" sx={{ boxShadow: 8 }}>
+            {t('home.locations')}
+          </Button>
+        </Link>
       </ActionArea>
     </Wrapper>
   );
