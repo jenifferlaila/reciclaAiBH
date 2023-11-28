@@ -1,10 +1,12 @@
-import { Navbar, PageWrapper } from '../../components';
+import { LocationsMap, Navbar, PageWrapper } from '../../components';
 
 function Locations() {
   return (
     <>
       <Navbar />
-      <PageWrapper></PageWrapper>
+      <PageWrapper>
+        <LocationsMap />
+      </PageWrapper>
     </>
   );
 }
