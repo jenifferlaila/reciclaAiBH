@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom';
 import { useMediaQuery, useTheme } from '@mui/material';
 
-import { useContent } from '../../../../content';
+import { useContent } from '../../content';
 import { ActionArea, ArrowDown, ImageContainer, Title, Wrapper } from './TitleCard.style';
-import { Button } from '../../../../components';
+import { Button } from '../../components';
 
 function TitleCard() {
   const { t } = useContent();

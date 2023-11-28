@@ -1,5 +1,5 @@
-import { Navbar, PageWrapper } from '../../components';
-import { TitleCard } from './components';
+import { Navbar, PageWrapper, TitleCard, News } from '../../components';
+import { news } from '../../content';
 
 function Home() {
   return (
@@ -7,6 +7,7 @@ function Home() {
       <Navbar isHome />
       <PageWrapper>
         <TitleCard />
+        <News news={news} />
       </PageWrapper>
     </>
   );
