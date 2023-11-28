@@ -3,7 +3,7 @@ import { Box, Typography } from '@mui/material';
 import { keyframes, styled } from '@mui/material/styles';
 
 export const Wrapper = styled(Box)({
-  gap: '2rem',
+  gap: '1rem',
   display: 'flex',
   alignItems: 'center',
   flexDirection: 'column',

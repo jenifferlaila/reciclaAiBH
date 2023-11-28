@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom';
 import { useMediaQuery, useTheme } from '@mui/material';
 
-import { useContent } from '../../../../content';
+import { useContent } from '../../content';
 import { ActionArea, ArrowDown, ImageContainer, Title, Wrapper } from './TitleCard.style';
-import { Button } from '../../../../components';
+import { Button } from '../../components';
 
 function TitleCard() {
   const { t } = useContent();
@@ -14,10 +14,10 @@ function TitleCard() {
   return (
     <Wrapper sx={{ minHeight: { xs: '85vh', md: 'unset' }, width: { xs: '100%', lg: undefined } }}>
       <ImageContainer>
-        <img src="/recycle.svg" alt="Recicle" style={{ maxWidth: 500, minWidth: 300 }} />
+        <img src="/recycling-2.svg" alt="Recicle" style={{ maxWidth: 350, minWidth: 300 }} />
       </ImageContainer>
 
-      <Title variant={isLarge ? 'h3' : 'h4'} sx={{ justifyContent: isLarge ? undefined : 'space-evenly' }}>
+      <Title variant="h4" sx={{ justifyContent: isLarge ? undefined : 'space-evenly' }}>
         {t('home.title')}
       </Title>
 
@@ -34,9 +34,9 @@ function TitleCard() {
         </Link>
       </ActionArea>
 
-      <Link to="/#noticias">
+      <a href="/#noticias">
         <ArrowDown fontSize="large" />
-      </Link>
+      </a>
     </Wrapper>
   );
 }

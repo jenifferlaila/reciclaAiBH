@@ -10,3 +10,5 @@ export function useContent() {
     t: content,
   };
 }
+
+export * from './news';
