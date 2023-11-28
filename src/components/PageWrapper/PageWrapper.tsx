@@ -1,8 +1,8 @@
-import { Box } from '@mui/material';
 import { PropsWithChildren } from 'react';
+import { Wrapper } from './PageWrapper.style';
 
 function PageWrapper({ children }: PropsWithChildren) {
-  return <Box sx={{ padding: '0.75rem' }}>{children}</Box>;
+  return <Wrapper>{children}</Wrapper>;
 }
 
 export default PageWrapper;
