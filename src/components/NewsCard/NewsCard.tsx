@@ -1,10 +1,10 @@
-import { Card, Typography } from '@mui/material';
+import { Typography } from '@mui/material';
 import { News } from '../../content';
 import { Content, TitleArea } from './NewsCard.style';
 
-function NewsCard({ img, title }: News) {
+function NewsCard({ img, title, url }: News) {
   return (
-    <Card sx={{ width: '100%', overflow: 'hidden' }}>
+    <a href={url}>
       <Content sx={{ boxShadow: 0, backgroundImage: `url(${img})` }}>
         <TitleArea>
           <Typography gutterBottom variant="h5" component="div">
@@ -16,7 +16,7 @@ function NewsCard({ img, title }: News) {
           </Typography>
         </TitleArea>
       </Content>
-    </Card>
+    </a>
   );
 }
 

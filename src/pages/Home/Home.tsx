@@ -1,6 +1,6 @@
-import { Paper } from '@mui/material';
 import { Navbar, PageWrapper, TitleCard, News } from '../../components';
 import { news } from '../../content';
+import { NewsContainer } from './Home.style';
 
 function Home() {
   return (
@@ -9,9 +9,9 @@ function Home() {
       <PageWrapper>
         <TitleCard />
 
-        <Paper id="noticias" sx={{ width: '90%', mt: '10rem', p: '2rem', boxShadow: 0 }}>
+        <NewsContainer id="noticias">
           <News news={news} />
-        </Paper>
+        </NewsContainer>
       </PageWrapper>
     </>
   );
