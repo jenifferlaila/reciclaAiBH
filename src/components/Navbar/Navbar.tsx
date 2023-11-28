@@ -20,7 +20,11 @@ function Navbar({ isHome = false }: NavbarProps) {
             <ArrowBackIosNew />
           </Link>
 
-          <Typography variant="h5" component="p" sx={{ fontWeight: 'normal', ml: 'auto', pr: '1rem' }}>
+          <Typography
+            variant="h5"
+            component="p"
+            sx={{ fontWeight: 'normal', ml: 'auto', pr: '1rem', userSelect: 'none' }}
+          >
             {t('navbar.title')}
           </Typography>
 
