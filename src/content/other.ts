@@ -1,3 +1,3 @@
 export default {
-  'navbar.title': 'Recicla Ai BH',
+  'navbar.title': 'Recicla Aí BH',
 } as const;

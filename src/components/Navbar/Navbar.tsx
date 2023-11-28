@@ -16,19 +16,25 @@ function Navbar({ isHome = false }: NavbarProps) {
     <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <Link to="/" style={{ color: palette.text.primary, visibility: isHome ? 'hidden' : 'visible' }}>
-            <ArrowBackIosNew />
-          </Link>
+
+          <img 
+          src='/navbarImage.jpg' style={{ height: '80px' }}
+          alt='Home'
+          />
 
           <Typography
             variant="h5"
             component="p"
-            sx={{ fontWeight: 'normal', ml: 'auto', pr: '1rem', userSelect: 'none' }}
+            sx={{ fontWeight: '1000', pr: '1rem', userSelect: 'none' }}
           >
             {t('navbar.title')}
           </Typography>
 
           <p style={{ marginLeft: 'auto' }}></p>
+
+          <Link to="/" style={{ color: palette.text.primary, visibility: isHome ? 'hidden' : 'visible' }}>
+            <ArrowBackIosNew />
+          </Link>
         </Toolbar>
       </Container>
     </AppBar>
