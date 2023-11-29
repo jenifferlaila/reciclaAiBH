@@ -16,6 +16,7 @@ function News({ news }: NewsProps) {
         duration={500}
         interval={3000}
         cycleNavigation
+        animation="slide"
         navButtonsAlwaysVisible
         sx={{ width: '100%', height: 'auto' }}
       >

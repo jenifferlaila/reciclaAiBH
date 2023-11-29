@@ -7,6 +7,8 @@ export const Content = styled(Paper)({
   minHeight: '400px',
   borderRadius: '4px',
   position: 'relative',
+  backgroundSize: 'cover',
+  backgroundRepeat: 'no-repeat',
   transitionProperty: 'all',
   transitionDuration: '500ms',
   transitionTimingFunction: 'cubic-bezier(0.4, 0, 0.2, 1),',
