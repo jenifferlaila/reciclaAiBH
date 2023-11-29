@@ -3,5 +3,6 @@ export default {
   'home.more': 'Saiba mais',
   'home.locations': 'Pontos de coleta',
   'home.news.title': 'Notícias',
-  'home.news.subtitle': 'Notícias, artigos e outros conteúdos relevantes sobre a coleta de resíduos sólidos recicáveis',
+  'home.news.subtitle':
+    'Notícias, artigos e outros conteúdos relevantes sobre a coleta de resíduos sólidos recicláveis',
 } as const;
