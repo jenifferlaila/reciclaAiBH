@@ -28,3 +28,14 @@ export const IFrame = styled('iframe')({
   width: '100%',
   height: '100%',
 });
+
+export const DivSubTitle = styled('div')({
+  display: 'flex',
+  alignItems: 'center',
+  marginBottom: '1rem',
+  flexDirection: 'row',
+  'img': {
+      width: '10%',
+      minWidth: '80px'
+  }
+});
