@@ -23,8 +23,9 @@ export const Title = styled(Typography)({
 
 export const ActionArea = styled(Box)({
   gap: '1rem',
-  width: 'fit-content',
   display: 'flex',
+  marginBottom: '0.5rem',
+  width: 'fit-content',
   alignItems: 'center',
   flexDirection: 'column',
 });
